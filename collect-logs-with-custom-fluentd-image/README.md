@@ -87,5 +87,8 @@ sudo docker run \
 In order to view the logs of a particular container, the following NRQL query can be used:
 `FROM Log SELECT * WHERE container_name = '/random-logger'`
 
-The result will look as follows:
+The result will look as follows where
+* the red boxes indicate the container name and ID
+* the orange boxes indicate the custom tags with which we are enriching the container logs
+
 ![New Relic UI - Querying container logs](./docs/new_relic_ui_logs_query.png)
